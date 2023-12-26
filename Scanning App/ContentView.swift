@@ -46,14 +46,3 @@ struct ContentView: View{
         }
     }
 }
-
-struct ContentView_Previews : PreviewProvider {
-    @StateObject static var viewModel: ViewModel = {
-        return ViewModel()
-    }()
-    
-    static var previews: some View {
-        ContentView()
-            .environmentObject(viewModel)
-    }
-}
